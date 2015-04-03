@@ -12,3 +12,4 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
     react-native init AwesomeProject
     ```
 
+2. Wrap the placeholder content in an IOS Navigation Controller using the [NavigatorIOS Component](http://facebook.github.io/react-native/docs/navigatorios.html#content)
