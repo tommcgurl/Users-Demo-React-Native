@@ -1,5 +1,5 @@
 # Users-Demo-React-Native
-An experimentation with react native that expands on the react-native 'movies' demo.
+An experimentation with react native that expands on the react-native 'movies' demo. This is a Work in Progress and I will be adding steps over time.
 
 After going through the [tutorial on the React Native site](http://facebook.github.io/react-native/docs/tutorial.html#content), I thought it would be fun to expand upon it a bit and build a small demo app for viewing users. 
 
