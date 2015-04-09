@@ -13,3 +13,5 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
     ```
 
 2. Wrap the placeholder content in an IOS Navigation Controller using the [NavigatorIOS Component](http://facebook.github.io/react-native/docs/navigatorios.html#content)
+
+3. Replace placeholder view with a animated loader while the users list is fetched. 
