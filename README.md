@@ -24,3 +24,8 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
 5. Fetch the users data and render the results to a ListView
     - Added a __componentDidMount__ function that fetches the user store then calls setState to set the result of the fetch to the UserList components dataSource
     - Added a temporary __renderUser__ function to render a ListView row as a simple Text component containing the user's first name for now. 
+
+6. Create a row for each user with their picture, name, and address.
+    - Added the __UserRow Component__
+    - This componenet is used as the row template for each user that will be populating the ListView
+    - Added a __capitalized util__ to capitalize names and addresses.

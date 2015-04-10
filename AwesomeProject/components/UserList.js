@@ -9,7 +9,8 @@ var {
 } = React;
 
 // Url for the randomuser.me api. Requesting 100 users
-var userStore = require('../stores/users.js');
+var userStore = require('../stores/users'),
+  UserRow = require('./UserRow')
 
 var UserList = React.createClass({
 
@@ -37,9 +38,9 @@ var UserList = React.createClass({
     return (
       <View style={styles.columnContainer}>
         <ActivityIndicatorIOS
-            animating={true}
-            color={'blue'}
-            size={'large'} />
+          animating={true}
+          color={'blue'}
+          size={'large'} />
         <Text> Requesting Users... </Text>
       </View>
     );
@@ -50,7 +51,7 @@ var UserList = React.createClass({
    */
   renderUser: function(row) {
     return (
-      <Text>{row.user.name.first}</Text>
+      <UserRow user={row.user} />
     );
   },
 
