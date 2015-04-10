@@ -9,17 +9,28 @@ var {
 } = React;
 
 // Url for the randomuser.me api. Requesting 100 users
-var url = 'http://api.randomuser.me/?results=100'
+var userStore = require('../stores/users.js');
 
 var UserList = React.createClass({
 
   getInitialState: function() {
     return {
       dataSource: new ListView.DataSource({
-          rowHasChanged: (row1, row2) => row1 !== row2
+        rowHasChanged: (row1, row2) => row1 !== row2
       }),
       loaded: false
     };
+  },
+
+  componentDidMount: function() {
+    userStore.fetchUsers()
+      .done(()=> {
+        // Set the datasource to the users data
+        this.setState({
+          dataSource: this.state.dataSource.cloneWithRows(userStore.getUsers()),
+          loaded: true
+        });
+      });
   },
 
   renderLoader: function() {
@@ -34,11 +45,31 @@ var UserList = React.createClass({
     );
   },
 
+  /**
+   * Render a single user row
+   */
+  renderUser: function(row) {
+    return (
+      <Text>{row.user.name.first}</Text>
+    );
+  },
+
   render: function() {
       // If the state is fetching data show loader
       if(!this.state.loaded) {
         return this.renderLoader()
       }
+
+      /*
+       * If the data has been fetched render it to an iOS ListView
+       * passing it a function (this.renderUser) for rendering each
+       * indiviual row in the ListView
+       */
+      return (
+        <ListView
+          dataSource={this.state.dataSource}
+          renderRow={this.renderUser} />
+      );
   }
 
 });

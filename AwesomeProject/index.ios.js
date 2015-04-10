@@ -23,8 +23,7 @@ var AwesomeProject = React.createClass({
           component: UserList,
           title: 'Users'
         }}
-        style={styles.navContent}
-      />
+        style={styles.navContent} />
     );
   }
 });

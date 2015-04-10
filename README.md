@@ -17,3 +17,10 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
 3. Replace placeholder view with a animated loader while the users list is fetched. 
 
 4. Create a basic object to fetch and store the data from the Random User API.
+    - This object uses the RandomUser API url and fetches 100 users.
+    - It has a getter and setter function for the data
+    - The fetch function uses promises to set the data once the response is returned from the API.
+
+5. Fetch the users data and render the results to a ListView
+    - Added a __componentDidMount__ function that fetches the user store then calls setState to set the result of the fetch to the UserList components dataSource
+    - Added a temporary __renderUser__ function to render a ListView row as a simple Text component containing the user's first name for now. 
