@@ -67,10 +67,13 @@ var UserList = React.createClass({
    */
   onSelectRow: function(user) {
     var firstName = user.name.first[0].toUpperCase() + user.name.first.slice(1);
-    // Transition to the user-detail route
+    // Transition to the user-detail route passing the user object
     this.props.navigator.push({
       title: firstName,
-      component: UserDetail
+      component: UserDetail,
+      passProps: {
+        user: user
+      }
     });
   },
 

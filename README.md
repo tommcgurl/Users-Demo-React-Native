@@ -38,3 +38,8 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
     - Pass an __onSelectRow__ function to the __UserRow Component__ to navigate to a UserDetail View
     - use the __navigator__ property of the __UserList__ to pass the firstName of the user as the title of the new view
     - Added a __UserDetail Component__  to serve as the view for displaying a user's information.
+
+9. Add the user's image to the __UserDetail Component__
+    - Pass the user object as a property to the __UserDetail Component__
+    - Add a container view to contain the image
+    - Style the container and image

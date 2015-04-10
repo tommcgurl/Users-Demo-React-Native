@@ -47,7 +47,8 @@ var styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'row',
-    padding: 10
+    padding: 10,
+    backgroundColor: '#F5FCFF'
   },
   thumbnail: {
     width: 53,
