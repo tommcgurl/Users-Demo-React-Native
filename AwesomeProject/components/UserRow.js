@@ -1,3 +1,5 @@
+'use strict';
+
 var React = require('react-native');
 
 var {
@@ -25,9 +27,7 @@ var UserRow = React.createClass({
 
     return (
       <TouchableHighlight
-        onPress={()=>{
-          alert(name);
-        }} >
+        onPress={this.props.onSelect.bind(null, user)} >
       <View style={styles.container}>
         <Image
           source={{uri: user.picture.thumbnail}}

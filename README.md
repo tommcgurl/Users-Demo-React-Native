@@ -33,3 +33,8 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
 7. Make each row 'selectable' using the __TouchableHighlight Component__
     - Added __TouchableHighlight__ to the __UserRow Component__
     - Added an __onPress__ function to temporarily alert the users's name
+
+8. Navigate to a __UserDetail__ View when a __UserRow__ is selected.
+    - Pass an __onSelectRow__ function to the __UserRow Component__ to navigate to a UserDetail View
+    - use the __navigator__ property of the __UserList__ to pass the firstName of the user as the title of the new view
+    - Added a __UserDetail Component__  to serve as the view for displaying a user's information.
