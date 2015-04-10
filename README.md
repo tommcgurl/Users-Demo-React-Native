@@ -29,3 +29,7 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
     - Added the __UserRow Component__
     - This componenet is used as the row template for each user that will be populating the ListView
     - Added a __capitalized util__ to capitalize names and addresses.
+
+7. Make each row 'selectable' using the __TouchableHighlight Component__
+    - Added __TouchableHighlight__ to the __UserRow Component__
+    - Added an __onPress__ function to temporarily alert the users's name

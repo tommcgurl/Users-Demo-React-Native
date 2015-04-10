@@ -4,6 +4,7 @@ var {
   View,
   Text,
   Image,
+  TouchableHighlight,
   StyleSheet
 } = React;
 
@@ -23,6 +24,10 @@ var UserRow = React.createClass({
       address = city +', ' + state;
 
     return (
+      <TouchableHighlight
+        onPress={()=>{
+          alert(name);
+        }} >
       <View style={styles.container}>
         <Image
           source={{uri: user.picture.thumbnail}}
@@ -32,6 +37,7 @@ var UserRow = React.createClass({
           <Text style={styles.name}>{address}</Text>
         </View>
       </View>
+      </TouchableHighlight>
     );
   }
 
