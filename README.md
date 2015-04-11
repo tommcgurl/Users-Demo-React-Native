@@ -43,3 +43,8 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
     - Pass the user object as a property to the __UserDetail Component__
     - Add a container view to contain the image
     - Style the container and image
+
+10. Add the user's name and address to the __UserDetail Component__
+    - Add a new container to the __UserDetail Component__ to hold the name and address.
+    - Positioned the container using __flexDirection: 'column'__ so it appears below the image.
+    - Added some padding to the overall container to position it just below the navigation header.
