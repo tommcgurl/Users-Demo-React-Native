@@ -30,13 +30,13 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
     - This componenet is used as the row template for each user that will be populating the ListView
     - Added a __capitalized util__ to capitalize names and addresses.
 
-7. Make each row 'selectable' using the __TouchableHighlight Component__
+7. Make each row 'selectable' using the [TouchableHighlight Component](https://facebook.github.io/react-native/docs/touchablehighlight.html#content)
     - Added __TouchableHighlight__ to the __UserRow Component__
     - Added an __onPress__ function to temporarily alert the users's name
 
 8. Navigate to a __UserDetail__ View when a __UserRow__ is selected.
     - Pass an __onSelectRow__ function to the __UserRow Component__ to navigate to a UserDetail View
-    - use the __navigator__ property of the __UserList__ to pass the firstName of the user as the title of the new view
+    - use the [Navigator](https://facebook.github.io/react-native/docs/navigator.html#content) property of the __UserList__ to pass the firstName of the user as the title of the new view
     - Added a __UserDetail Component__  to serve as the view for displaying a user's information.
 
 9. Add the user's image to the __UserDetail Component__
@@ -46,5 +46,10 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
 
 10. Add the user's name and address to the __UserDetail Component__
     - Add a new container to the __UserDetail Component__ to hold the name and address.
-    - Positioned the container using __flexDirection: 'column'__ so it appears below the image.
+    - Positioned the container using [flexDirection: 'column'](https://facebook.github.io/react-native/docs/flexbox.html#flexdirection) so it appears below the image.
     - Added some padding to the overall container to position it just below the navigation header.
+
+11. Add a basic [TabBarIOS Component](https://facebook.github.io/react-native/docs/tabbarios.html#content) for showing more info later.
+    - Added a new __InfoTabs Component__ that contains a __TabBarIOS Component__
+    - Added some placeholder tabs for now that will later be used to show more detailed information about the user
+    - Added some container views around the different components of the __UserDetail Component__

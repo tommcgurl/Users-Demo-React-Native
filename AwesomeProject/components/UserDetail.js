@@ -9,7 +9,8 @@ var {
   StyleSheet
 } = React;
 
-var capitalize = require('../utils/capitalize');
+var capitalize = require('../utils/capitalize'),
+  InfoTabs = require('./InfoTabs');
 
 var UserDetail = React.createClass({
   propTypes: {
@@ -25,9 +26,11 @@ var UserDetail = React.createClass({
 
     return (
       <View style={styles.container}>
-        <Image
-          source={{uri: image}}
-          style={styles.image} />
+        <View style={styles.imageContainer}>
+          <Image
+            source={{uri: image}}
+            style={styles.image} />
+        </View>
         <View style={styles.nameContainer} >
           <Text style={styles.text}>
             {name}
@@ -36,6 +39,7 @@ var UserDetail = React.createClass({
             {city + ', ' + state}
           </Text>
         </View>
+        <InfoTabs/>
       </View>
     );
   }
@@ -46,14 +50,21 @@ var styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'center'
+  },
+  imageContainer: {
+    flex: 1,
     alignItems: 'center',
-    paddingTop: 75
+    justifyContent: 'flex-end'
   },
   nameContainer: {
     flex: 1,
     alignItems: 'center',
+    justifyContent: 'flex-start',
     paddingTop: 10
+  },
+  infoTabContainer: {
+    flex: 1
   },
   text: {
     fontSize: 20
