@@ -50,7 +50,8 @@ var styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
     flex: 1,
-    justifyContent: 'center'
+    justifyContent: 'center',
+    paddingTop: 175
   },
   imageContainer: {
     flex: 1,

@@ -62,3 +62,6 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
         + 120 x 120 for 3x
     - Added the PNGs to the Images.xcassets via Xcode 
     - Added references to them from the TabBarIOS.items
+
+13. Add an onPress function to select the proper tab
+    - Added an __onPress__ function to the TabBarIOS.items in the __InfoTabs Component__ that calls __setState__ on the selectedTab state in order to change the selected tab appropriately
