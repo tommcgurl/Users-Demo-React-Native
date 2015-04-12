@@ -39,7 +39,8 @@ var UserDetail = React.createClass({
             {city + ', ' + state}
           </Text>
         </View>
-        <InfoTabs/>
+        <InfoTabs
+          user={user} />
       </View>
     );
   }

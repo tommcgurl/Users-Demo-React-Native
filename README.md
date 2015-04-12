@@ -65,3 +65,10 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
 
 13. Add an onPress function to select the proper tab
     - Added an __onPress__ function to the TabBarIOS.items in the __InfoTabs Component__ that calls __setState__ on the selectedTab state in order to change the selected tab appropriately
+
+14. Add the detailed information for each Info Tab
+    - Pass the user object as a property to the __InfoTabs Component__ and add the propTypes property.
+    - create a render function for all of the different Tabs
+    - set the result of the render functions as the view for each TabBarIOS.Item
+    - None of these are styled yet. That will come later.
+    
