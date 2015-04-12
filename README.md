@@ -53,3 +53,12 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
     - Added a new __InfoTabs Component__ that contains a __TabBarIOS Component__
     - Added some placeholder tabs for now that will later be used to show more detailed information about the user
     - Added some container views around the different components of the __UserDetail Component__
+
+12. Add the proper tabs and icons to the __InfoTabs Component__
+    - Added PNGs from [Ionicons](http://ionicons.com/) the icon font set from [The Ioncic Frameword](http://ionicframework.com/)
+    - Scaled the PNGs to support all iOS displays 
+        + 40 x 40 for 1x
+        + 80 x 80 for 2x
+        + 120 x 120 for 3x
+    - Added the PNGs to the Images.xcassets via Xcode 
+    - Added references to them from the TabBarIOS.items

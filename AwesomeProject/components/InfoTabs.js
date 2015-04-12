@@ -35,26 +35,32 @@ var InfoTabs = React.createClass({
       <View>
         <TabBarIOS>
           <Tab
-            icon={_icon('contacts')}
-            title={'one'}
+            icon={_icon('contact')}
+            title={'user'}
             selected={true}>
             <View></View>
           </Tab>
           <Tab
-            icon={_icon('more')}
-            title={'three'}
+            icon={_icon('phone')}
+            title={'phone'}
             selected={false}>
             <View></View>
           </Tab>
           <Tab
-            icon={_icon('more')}
-            title={'four'}
+            icon={_icon('email')}
+            title={'email'}
             selected={false}>
             <View></View>
           </Tab>
           <Tab
-            icon={_icon('more')}
-            title={'five'}
+            icon={_icon('location')}
+            title={'address'}
+            selected={false}>
+            <View></View>
+          </Tab>
+          <Tab
+            icon={_icon('calendar')}
+            title={'D.O.B.'}
             selected={false}>
             <View></View>
           </Tab>
