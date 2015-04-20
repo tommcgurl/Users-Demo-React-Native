@@ -60,6 +60,7 @@ var styles = StyleSheet.create({
     paddingLeft: 20
   },
   name: {
+    fontFamily: 'AvenirNext-Regular',
     fontSize: 20,
     marginBottom: 8
   }

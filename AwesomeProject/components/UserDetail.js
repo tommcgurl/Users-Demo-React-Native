@@ -52,7 +52,7 @@ var styles = StyleSheet.create({
     flexDirection: 'column',
     flex: 1,
     justifyContent: 'center',
-    paddingTop: 175
+    paddingTop: 95
   },
   imageContainer: {
     flex: 1,
@@ -60,15 +60,13 @@ var styles = StyleSheet.create({
     justifyContent: 'flex-end'
   },
   nameContainer: {
-    flex: 1,
+    flex: 0.4,
     alignItems: 'center',
     justifyContent: 'flex-start',
     paddingTop: 10
   },
-  infoTabContainer: {
-    flex: 1
-  },
   text: {
+    fontFamily: 'AvenirNext-Regular',
     fontSize: 20
   },
   image: {

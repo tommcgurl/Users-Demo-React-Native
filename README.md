@@ -71,4 +71,9 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
     - create a render function for all of the different Tabs
     - set the result of the render functions as the view for each TabBarIOS.Item
     - None of these are styled yet. That will come later.
+
+15. Replace the font throughout the app and some style changes for the User Detail View.
+    - Switch the font throughout the app to 'AvenirNext-Regular'
+    - Moved the user detail info into a 'card'
+        + Styled the card
     

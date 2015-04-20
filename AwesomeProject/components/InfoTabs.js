@@ -13,7 +13,8 @@ var {
   StyleSheet
 } = React;
 
-var Tab = TabBarIOS.Item;
+var Tab = TabBarIOS.Item,
+  capitalize = require('../utils/capitalize');
 
 var InfoTabs = React.createClass({
 
@@ -42,16 +43,16 @@ var InfoTabs = React.createClass({
     var email = this.props.user.email;
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>{'Email: ' + email}</Text>
+        <Text style={styles.text}>{email}</Text>
       </View>
     );
   },
 
   renderAddressView: function() {
     var address = this.props.user.location,
-      street = address.street,
-      city = address.city,
-      state = address.state,
+      street = capitalize(address.street),
+      city = capitalize(address.city),
+      state = capitalize(address.state),
       zip = address.zip;
     return (
       <View style={styles.container}>
@@ -80,7 +81,9 @@ var InfoTabs = React.createClass({
     dateString = dob.toDateString()
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>{'Date of Birth:'}</Text>
+        <View style={styles.header}>
+          <Text style={styles.text}>{'Date of Birth'}</Text>
+        </View>
         <Text style={styles.text}>{dateString}</Text>
       </View>
     );
@@ -147,11 +150,27 @@ function _icon(imageUri) {
 
 var styles = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: 'center'
+    marginTop: 10,
+    padding: 10,
+    width: 290,
+    height: 150,
+    borderRadius: 3,
+    shadowColor: 'black',
+    shadowOffset: {h: 0, w: 0},
+    shadowOpacity: 0.3,
+    shadowRadius: 5,
+    backgroundColor: '#20ACA1',
+    alignSelf: 'center'
   },
   text: {
-    fontSize: 20
+    fontFamily: 'AvenirNext-Regular',
+    color: 'white',
+    fontSize: 18,
+    padding: 10
+  },
+  header: {
+    borderBottomWidth: 1,
+    borderBottomColor: '#eeeeee'
   }
 });
 
