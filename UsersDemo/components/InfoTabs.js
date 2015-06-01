@@ -153,7 +153,7 @@ var styles = StyleSheet.create({
     marginTop: 10,
     padding: 10,
     width: 290,
-    height: 100,
+    height: 110,
     borderRadius: 3,
     shadowColor: 'black',
     shadowOffset: {h: 0, w: 0},
