@@ -5,6 +5,21 @@ After going through the [tutorial on the React Native site](http://facebook.gith
 
 I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://randomuser.me/) for generating random users as the data source for my ListView application. It's a pretty awesome resource for some quick fake data.
 
+#### Running the existing project
+If you want to see the final product. Follow the below instructions. If you want to go through the implementation check out the [steps section](#steps).
+
+1. Clone the repo
+2. cd into the *UsersDemo* folder and run
+    ```
+    npm install
+    ```
+3. Navigate to the UsersDemo folder and open the **UsersDemo.xcodeproj** file.
+4. Now once the project opens in xCode, simply select the device you want to run on and hit 
+    ```
+    ⌘ + R
+    ```
+This will start a development server and the iOS simulator.
+
 ####Steps
 
 1. Generate the tutorial project using 
@@ -81,4 +96,5 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
    - Added [Gertjan Reynaert](https://github.com/GertjanReynaert)'s nice npm module called [react-native-device](https://www.npmjs.com/package/react-native-device)
    - Moved UserDetail image out into a ResponsiveImage Component
    - Added background image for the UserDetail view
+
     
