@@ -76,4 +76,9 @@ I'm using [Random API's](https://twitter.com/randomapi) [randomuser.me](https://
     - Switch the font throughout the app to 'AvenirNext-Regular'
     - Moved the user detail info into a 'card'
         + Styled the card
+
+16. Fix styles to fit all iPhone sizes.
+   - Added [Gertjan Reynaert](https://github.com/GertjanReynaert)'s nice npm module called [react-native-device](https://www.npmjs.com/package/react-native-device)
+   - Moved UserDetail image out into a ResponsiveImage Component
+   - Added background image for the UserDetail view
     
